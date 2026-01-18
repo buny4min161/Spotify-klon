@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .accordion-button { 
+            background-color: #121212 !important;
+            color: white !important;
+        }
+        .accordion-button::after {
+            background-color: white !important;
+        }
+        ul li {
+            font-size: 13px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+  <body style="background-color: #121212;" class="text-white">
+
+    <nav class="navbar navbar-expand-lg bg-black text-white px-5">
+        <div class="container-md">
+          <a class="navbar-brand text-white fw-bold" href="#">
+            <i class="bi bi-spotify"></i>
+            Spotify
+            </a>
+          <div>
+            <a class="navbar-brand text-white fw-bold" href="#">Premium</a>
+            <a class="navbar-brand text-white fw-bold" href="#">Destek</a>
+            <a class="navbar-brand text-white fw-bold" href="#">Indir</a>
+          </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="container-md py-5">
+        <img class="position-absolute z-n1 end-0 top-0 w-50" src="https://wwwmarketing.scdn.co/static/images/premium/desktop-album-evergreen-1x.png">
+        <div class="w-50">
+            <h1 class="fw-bold">
+                Sınırsız dinle. Hesabını Premium Bireysel planına yükselttiğinde 1 ay ücretsiz
+            </h1>
+            <h2 class="fs-6 fw-lighter">
+                Sonra yalnızca ₺59,99/ay. İstediğin zaman iptal et.
+            </h2>            
+        </div>
+
+        <div class="d-flex  mt-5">
+            <button class=" rounded-pill btn btn-danger">
+                Kullanmaya Basla
+            </button>
+            <button class=" rounded-pill btn btn-secondary ms-2">
+                Planlari Goruntule
+            </button>
+        </div>
+
+        <div class="w-50 mt-3">
+            <p class="fw-lighter w-50" style="font-size: 8px;">İlk 1 ay boyunca ücretsiz, sonra ayda ₺59,99. Sadece Premium'u daha önce denememiş kişiler tekliften yararlanabilir. Koşullar geçerlidir.</p>
+        </div>
+
+    </section>
+
+    <!-- Table section -->
+    <section class="container py-5 mt-3">
+        <div class="text-center">
+            <h3 class="fw-bold">Farkı keşfet</h3>
+            <p class="fw-small">Premium'a geç ve dinleyeceğine yalnızca sen karar ver. İstediğin zaman iptal et.</p>
+        </div>
+        <div class="mt-5">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Elde edeceğin avantajlar</th>
+                    <th scope="col">Spotify'ın
+                        Free planı</th>
+                    <th scope="col">            <i class="bi bi-spotify"></i>
+                        Premium</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Reklamsız müzik dinle</td>
+                    <td>--</td>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td>İndir ve çevrimdışı dinle</td>
+                    <td>--</td>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Şarkıları istediğin sırada çal</td>
+                    <td>--</td>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Arkadaşlarınla aynı anda dinle</td>
+                    <td>--</td>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Yüksek ses kalitesi</td>
+                    <td>--</td>
+                    <td><i class="bi bi-check-circle-fill"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+    
+    <!-- SSS /FAQ section -->
+    <section class="container py-5 my-4">
+        <div class="text-center">
+            <h3 class="fw-bold">Soruların mı var?</h3>
+            <p class="fw-small" style="font-size: 10px;">Yanıtları bizde.</p>
+            <p class="fw-small" style="font-size: 13px;">
+                <a href="#" style="color:white">Destek sitemizde</a>
+                 sorularının yanıtlarını bulabilirsin.
+            </p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Spotify Premium teklifi nasıl işler?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Premium planımı nasıl iptal edebilirim?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Premium Duo planı nasıl çalışır?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Premium Öğrenci planı nasıl çalışır?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Spotify Premium'un Türkiye dahilindeki ücreti nedir?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+          </div>
+    </section>
+    
+    <!-- Footer section -->
+    <footer class="footer container-fluid bg-black p-5 row" >
+            <div class="col-6 col-md ">
+                <i class="bi bi-spotify" style="font-size:26px;"></i>
+                <h3 class="fw-bold d-inline-block">Spotify</h3>
+            </div>
+            <div class="col-6 col-md">
+                <p class="fw-bold text-secondary text-uppercase">ŞIRKET</p>
+                 <ul class="list-unstyled">
+                    <li>Hakkında</li>
+                    <li>Kariyer</li>
+                    <li>For the Record</li>
+                 </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="fw-bold text-secondary text-uppercase">Topluluklar</p>
+                 <ul class="list-unstyled">
+                    <li>Sanatçılar İçin</li>
+                    <li>Geliştiriciler</li>
+                    <li>Reklam</li>
+                    <li>Yatırımcılar</li>
+                    <li>Satıcılar</li>
+                 </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="fw-bold text-secondary text-uppercase">Yararlı bağlantılar</p>
+                 <ul class="list-unstyled">
+                    <li>Destek</li>
+                    <li>Web Çalar</li>
+                    <li>Ücretsiz Mobil Uygulama</li>
+                 </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="fw-bold text-secondary text-uppercase">Spotify Planları</p>
+                 <ul class="list-unstyled">
+                    <li>Premium Bireysel</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                 </ul>
+            </div>
+            <div class="col-6 col-md">
+               
+            </div>
+
+
+    </footer>
+       
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
